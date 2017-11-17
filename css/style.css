@@ -49,6 +49,7 @@
     width:50px;
     height:50px;
     position:relative;
+    outline: none;
   }
 
   .hamburger div {
@@ -60,7 +61,7 @@
     transform: translate(-50%,-50%);
     top:50%;
     left:50%;
-    transition:5s;
+    transition:1.2s;
   }
 
   .hamburger div:first-child{
@@ -95,10 +96,10 @@
     width:100%;
     max-height:0px;
     overflow:hidden;
-    transition:.25s;
+    transition:2s;
   }
   .main-nav-list.open{
-    max-height:500px;
+    max-height:120px;
   }
 
 }
