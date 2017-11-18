@@ -6,15 +6,8 @@
 
 html{
   height:100%;
-  background:linear-gradient(60deg,white 60%, #ffb347);
+  background:beige;
 }
-
-footer{
-
-}
-
-
-
 
 .brand-link{
   width:50%;
@@ -24,7 +17,7 @@ footer{
   display:flex;
   width:100%;
   min-height: 50px;
-  background:#ffb347;
+  background:transparent;
   padding: 0 1rem; /* top and bottom: 0 left&right 1 rem */
   align-items: center; /* controls vertical alignment in flex */
   font-size: 1.5rem;
@@ -36,7 +29,7 @@ footer{
   opacity:0;
   list-style: none;
 
-  /*margin-left: auto; /* pushes items to far right */*/
+  /*margin-left: auto; /* pushes items to far right */
 }
 
 .hamburger{
@@ -128,67 +121,267 @@ footer{
 }
 
 
+
+
+.infobar1text{
+  transition:0;
+  margin: 20% 5%;
+}
+
 .infobar1{
+  font-size:36px;
+  color:black;
+  font-weight: bolder;
   width: 200px;
   height:200px;
   border-radius:100px;
-  background:black;
-  opacity:.7;
+  background:purple;
+  opacity:.1;
   position:fixed;
-  bottom:200px;
-  left:calc(25% - 100px);
+  bottom:5%;
+  left:7%;
   transition:2s;
   border:red solid 3px;
+  outline:none;
+
 }
 
-
-
-.infobar1:hover{
+.infobar1:active{
+  display:visible;
   width:350px;
   height:350px;
+  top:calc(50% - 175px);
+  left:calc(50% - 175px);
+  opacity:1;
+  transform:rotateX(720deg);
 }
 
 .infobar2{
-  width: 200px;
-  height:200px;
+  width: 250px;
+  height:250px;
   border-radius:100px;
-  background:black;
-  opacity:.7;
-  position:fixed;
-  bottom:200px;
-  left:calc(50% - 100px);
+  background-image: url("../images/pennstate.jpg");
+  background-size:cover;
+  background-position: center;
+  opacity:.1;
+  position:absolute;
+  top:7%;
+  left:calc(50% - 125px);
   transition:2s;
-  border:red solid 3px;
+  border:lightblue solid 7px;
+
 }
 
+.infobar2:active{
+  font-size: 1.5rem;
+  opacity:1;
+  width:400px;
+  height:400px;
+  top:calc(50% - 200px);
+  left:calc(50% - 200px);
+  transform: rotateX(45deg)rotateY(360deg);
+}
 
-
-.infobar2:hover{
-  width:350px;
-  height:350px;
+.infobar2text{
+  font-size: 1rem;
+  margin:25% 5%;
+  text-align: center;
+  color:white;
 }
 
 .infobar3{
-  width: 200px;
-  height:200px;
+  font-size:1rem;
+  text-align:center;
+  justify-content:center;
+  width: 175px;
+  height:225px;
   border-radius:100px;
-  background:black;
+  background:blue;
   opacity:.1;
   position:fixed;
-  bottom:0px;
-  left:calc(75% - 100px);
+  top:40%;
+  left:7%;
   transition:2s;
   border:red solid 3px;
 }
 
-
-
-.infobar3:hover{
+.infobar3:active{
+  font-size:2rem;
   width:350px;
   height:350px;
-  bottom:50px;
+  top:calc(50% - 175px);
+  left:calc(50% - 175px);
+  opacity:1;
+  transform: rotate(360deg);
+}
+
+.infobar3text{
+  margin-top:10%;
+}
+
+.infobar4{
+  width: 200px;
+  height:200px;
+  border-radius:100px;
+  background-image: url("../images/drflag.png");
+  background-size:cover;
+  background-position: center;
+  opacity:.1;
+  position:fixed;
+  top:7%;
+  left:7%;
+  transition:2s;
+  border:red solid 3px;
+}
+
+.infobar4:active{
+  top:calc(50% - 250px);
+  left:calc(50% - 250px);
+  opacity:1;
+  height:500px;
+  width:500px;
+  border-radius:250px;
+
+}
+
+.infobar4text{
+  font-size:1rem;
+  margin-top:15%;
+  text-align: center;
+
+}
+
+.infobar5{
+  width: 200px;
+  height:200px;
+  color:white;
+  font-style: italic;
+  border-radius:100px;
+  background-image: url("../images/frisbeelife.jpg");
+  background-size:cover;
+  background-position: center;
+  opacity:.5;
+  position:absolute;
+  bottom:5%;
+  left:calc(50% - 100px);
+  transition:2s;
+  border:white solid 5px;
+}
+
+.infobar5:active{
+  width:350px;
+  height:350px;
+  top:calc(50% - 175px);
+  left:calc(50% - 175px);
+  border:yellow;
   opacity:1;
 }
+
+.infobar5text{
+  margin-top:25%;
+}
+
+.infobar6{
+  width: 200px;
+  height:200px;
+  border-radius:100px;
+  background:-webkit-linear-gradient(aqua, yellow);
+  background:-o-linear-gradient(aqua, yellow);
+  background:linear-gradient(aqua, yellow);
+  box-shadow: 0px 38px 31px 11px #858E55;
+  opacity:.1;
+  position:fixed;
+  bottom:5%;
+  right:7%;
+  transition:3s;
+  transition-timing-function: steps(6);
+  border:blue solid 3px;
+  overflow:hidden;
+
+}
+
+.infobar6:active{
+  width:350px;
+  height:350px;
+  top:calc(50% - 175px);
+  left:calc(50% - 175px);
+  border-radius:175px;
+  opacity:1;
+  background:-webkit-linear-gradient(yellow, aqua);
+  background:-o-linear-gradient(yellow, aqua);
+  background:linear-gradient(yellow, aqua);
+  box-shadow: 0px 38px 31px 11px #85B8BF;
+
+}
+
+.infobar6text{
+  margin:25% 10% 25% 10%;
+  text-align:center;
+  overflow:hidden;
+  font-size:2rem;
+
+}
+
+.infobar7{
+  width: 200px;
+  height:200px;
+  border-radius:50px 450px 50px 850px;
+  background:linear-gradient(45deg,gray 10%,navy);
+  opacity:.1;
+  position:fixed;
+  top:7%;
+  right:7%;
+  transition:2s;
+  border:red solid 3px;
+  font-size:1rem;
+}
+
+.infobar7:active{
+  width:350px;
+  height:350px;
+  opacity:1;
+  font-size:2rem;
+  top:calc(50% - 175px);
+  left:calc(50% - 175px);
+}
+
+.infobar7text{
+  margin-left:20%;
+  margin-top:25%;
+  text-align: center;
+  transform:rotate(45deg);
+  font-size:inherit;
+}
+
+.infobar8{
+  width: 200px;
+  height:200px;
+  border-radius:100px;
+  background:lightgreen;
+  opacity:.1;
+  position:fixed;
+  top:40%;
+  right:7%;
+  transition:2s;
+  border:darkgreen dotted 10px;
+}
+
+.infobar8:active{
+  width:350px;
+  height:350px;
+  top:calc(50% - 175px);
+  left:calc(50% - 175px);
+  transform:rotate(720deg) rotateY(360deg);
+  opacity:1;
+}
+
+.infobar8text{
+  margin:20%;
+}
+
+
+
+
 
 
 
