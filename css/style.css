@@ -9,6 +9,12 @@ html{
   background:linear-gradient(60deg,white 60%, #ffb347);
 }
 
+footer{
+
+}
+
+
+
 
 .brand-link{
   width:50%;
@@ -119,23 +125,93 @@ html{
     max-height:120px;
   }
 
+}
 
 
-
-}.sidebar1{
+.infobar1{
   width: 200px;
   height:200px;
-  border-radius: 50px 200px 50px 50px;
+  border-radius:100px;
   background:black;
   opacity:.7;
   position:fixed;
-  bottom:-40px;
-  left:-40px;
+  bottom:200px;
+  left:calc(25% - 100px);
   transition:2s;
   border:red solid 3px;
 }
 
-.sidebar1:hover{
+
+
+.infobar1:hover{
   width:350px;
   height:350px;
+}
+
+.infobar2{
+  width: 200px;
+  height:200px;
+  border-radius:100px;
+  background:black;
+  opacity:.7;
+  position:fixed;
+  bottom:200px;
+  left:calc(50% - 100px);
+  transition:2s;
+  border:red solid 3px;
+}
+
+
+
+.infobar2:hover{
+  width:350px;
+  height:350px;
+}
+
+.infobar3{
+  width: 200px;
+  height:200px;
+  border-radius:100px;
+  background:black;
+  opacity:.1;
+  position:fixed;
+  bottom:0px;
+  left:calc(75% - 100px);
+  transition:2s;
+  border:red solid 3px;
+}
+
+
+
+.infobar3:hover{
+  width:350px;
+  height:350px;
+  bottom:50px;
+  opacity:1;
+}
+
+
+
+.footerimages{
+  width:50px;
+  height:50px;
+  opacity:.8;
+}
+
+.img1{
+  position: fixed;
+  bottom:0;
+  left:calc(25% - 25px);
+}
+
+.img2{
+  position: fixed;
+  bottom:0;
+  left:calc(50% - 25px);
+}
+
+.img3{
+  position:fixed;
+  bottom:0;
+  left:calc(75% - 25px);
 }
