@@ -21,6 +21,7 @@ html{
   padding: 0 1rem; /* top and bottom: 0 left&right 1 rem */
   align-items: center; /* controls vertical alignment in flex */
   font-size: 1.5rem;
+  position:relative;
 }
 
 .main-nav-list{
@@ -28,6 +29,7 @@ html{
   display: flex;
   opacity:0;
   list-style: none;
+
 
   /*margin-left: auto; /* pushes items to far right */
 }
@@ -39,7 +41,9 @@ html{
   border:none;
   width:50px;
   height:50px;
-  position:relative;
+  position:absolute;
+  top:1%;
+  right:1%;
   outline: none;
 }
 
@@ -132,21 +136,21 @@ html{
   font-size:36px;
   color:black;
   font-weight: bolder;
-  width: 200px;
-  height:200px;
+  width: 150px;
+  height:150px;
   border-radius:100px;
   background:purple;
-  opacity:.1;
+  opacity:.3;
   position:fixed;
   bottom:5%;
   left:7%;
   transition:2s;
   border:red solid 3px;
   outline:none;
-
+  overflow:hidden;
 }
 
-.infobar1:active{
+.infobar1:focus{
   display:visible;
   width:350px;
   height:350px;
@@ -157,22 +161,22 @@ html{
 }
 
 .infobar2{
-  width: 250px;
-  height:250px;
+  width: 200px;
+  height:200px;
   border-radius:100px;
   background-image: url("../images/pennstate.jpg");
   background-size:cover;
   background-position: center;
-  opacity:.1;
+  opacity:.3;
   position:absolute;
   top:7%;
   left:calc(50% - 125px);
   transition:2s;
   border:lightblue solid 7px;
-
+  outline:none;
 }
 
-.infobar2:active{
+.infobar2:focus{
   font-size: 1.5rem;
   opacity:1;
   width:400px;
@@ -193,19 +197,20 @@ html{
   font-size:1rem;
   text-align:center;
   justify-content:center;
-  width: 175px;
-  height:225px;
+  width: 150px;
+  height:200px;
   border-radius:100px;
   background:blue;
-  opacity:.1;
+  opacity:.3;
   position:fixed;
   top:40%;
   left:7%;
   transition:2s;
   border:red solid 3px;
+  outline:none;
 }
 
-.infobar3:active{
+.infobar3:focus{
   font-size:2rem;
   width:350px;
   height:350px;
@@ -220,21 +225,28 @@ html{
 }
 
 .infobar4{
-  width: 200px;
-  height:200px;
+  width: 150px;
+  height:150px;
   border-radius:100px;
   background-image: url("../images/drflag.png");
   background-size:cover;
   background-position: center;
-  opacity:.1;
+  opacity:.3;
   position:fixed;
   top:7%;
   left:7%;
   transition:2s;
   border:red solid 3px;
+  animation: drflag1 3s infinite ease-in-out;
+  outline:none;
 }
 
-.infobar4:active{
+@keyframes drflag1{
+  50%{transform: scale(1.15);}
+  100%{transform:scale(1);}
+}
+
+.infobar4:focus{
   top:calc(50% - 250px);
   left:calc(50% - 250px);
   opacity:1;
@@ -252,23 +264,30 @@ html{
 }
 
 .infobar5{
-  width: 200px;
-  height:200px;
+  width: 150px;
+  height:150px;
   color:white;
   font-style: italic;
   border-radius:100px;
   background-image: url("../images/frisbeelife.jpg");
   background-size:cover;
   background-position: center;
-  opacity:.5;
+  opacity:.3;
   position:absolute;
   bottom:5%;
   left:calc(50% - 100px);
   transition:2s;
   border:white solid 5px;
+  animation: frisbee1 2s infinite ease-in-out;
+  outline:none;
 }
 
-.infobar5:active{
+@keyframes frisbee1{
+  50%{transform:translateX(10px);}
+  1000%{transform:translateX(-10px);}
+}
+
+.infobar5:focus{
   width:350px;
   height:350px;
   top:calc(50% - 175px);
@@ -282,14 +301,14 @@ html{
 }
 
 .infobar6{
-  width: 200px;
-  height:200px;
+  width: 150px;
+  height:150px;
   border-radius:100px;
   background:-webkit-linear-gradient(aqua, yellow);
   background:-o-linear-gradient(aqua, yellow);
   background:linear-gradient(aqua, yellow);
   box-shadow: 0px 38px 31px 11px #858E55;
-  opacity:.1;
+  opacity:.3;
   position:fixed;
   bottom:5%;
   right:7%;
@@ -297,10 +316,11 @@ html{
   transition-timing-function: steps(6);
   border:blue solid 3px;
   overflow:hidden;
+  outline:none;
 
 }
 
-.infobar6:active{
+.infobar6:focus{
   width:350px;
   height:350px;
   top:calc(50% - 175px);
@@ -311,6 +331,7 @@ html{
   background:-o-linear-gradient(yellow, aqua);
   background:linear-gradient(yellow, aqua);
   box-shadow: 0px 38px 31px 11px #85B8BF;
+
 
 }
 
@@ -323,20 +344,21 @@ html{
 }
 
 .infobar7{
-  width: 200px;
-  height:200px;
+  width: 150px;
+  height:150px;
   border-radius:50px 450px 50px 850px;
   background:linear-gradient(45deg,gray 10%,navy);
-  opacity:.1;
+  opacity:.3;
   position:fixed;
   top:7%;
   right:7%;
   transition:2s;
   border:red solid 3px;
   font-size:1rem;
+  outline:none;
 }
 
-.infobar7:active{
+.infobar7:focus{
   width:350px;
   height:350px;
   opacity:1;
@@ -354,25 +376,27 @@ html{
 }
 
 .infobar8{
-  width: 200px;
-  height:200px;
+  width: 150px;
+  height:150px;
   border-radius:100px;
   background:lightgreen;
-  opacity:.1;
+  opacity:.3;
   position:fixed;
   top:40%;
   right:7%;
   transition:2s;
   border:darkgreen dotted 10px;
+  overflow:hidden;
 }
 
-.infobar8:active{
+.infobar8:focus{
   width:350px;
   height:350px;
   top:calc(50% - 175px);
   left:calc(50% - 175px);
   transform:rotate(720deg) rotateY(360deg);
   opacity:1;
+  outline:none;
 }
 
 .infobar8text{
