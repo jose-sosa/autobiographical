@@ -1,3 +1,12 @@
-# My Third Website
+#AutoBiograhpical Site
+This website was intended to be a dive into the word of CSS animations... At the same time I hoped to include some
+fun and interesting facts about myself. 
 
-A website utilizing all of the techniques I have learned thus far.
+Built With
+Atom (HTML, CSS)
+
+Authors
+Jose Sosa
+
+Acknowledgments
+Kurt Petrek, the one and only. kurtpetrek.com
